@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Interactiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva</h1>
+  <div class="malla">
+    <!-- Semestres -->
+    <div class="semestre" id="S1">
+      <h2>Semestre 1</h2>
+      <div class="ramo" data-id="ramo1">Matemática I</div>
+      <div class="ramo" data-id="ramo2">Introducción a la Educación</div>
+    </div>
+    <div class="semestre" id="S2">
+      <h2>Semestre 2</h2>
+      <div class="ramo" data-id="ramo3" data-prereq="ramo1">Matemática II</div>
+      <div class="ramo" data-id="ramo4" data-prereq="ramo2">Didáctica</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
